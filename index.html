@@ -3,18 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>My Docsify Site</title>
-  <!-- Docsify theme (optional, you can choose a different one) -->
+  <!-- Docsify theme -->
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <!-- Optional: Include a highlight.js stylesheet for code syntax highlighting -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
   <!-- KaTeX CSS for math support -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css" integrity="sha384-t5CRwwdzgPWbCQw7/KUcVgPnGrW/sZ6Vt7FBZwH7lWfk8Uha3gF5MdZ6o86N0V5I" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css" 
+        integrity="sha384-t5CRwwdzgPWbCQw7/KUcVgPnGrW/sZ6Vt7FBZwH7lWfk8Uha3gF5MdZ6o86N0V5I" crossorigin="anonymous">
 </head>
 <body>
   <!-- This div is where Docsify will render your markdown content -->
   <div id="app"></div>
+  
+  <!-- Docsify configuration -->
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      homepage: 'README.md'
+    }
+  </script>
+  
   <!-- Docsify library -->
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <!-- Docsify plugins: include docsify-katex for math support -->
+  <!-- Docsify plugin for math support -->
   <script src="//unpkg.com/docsify-katex/dist/docsify-katex.min.js"></script>
-  <!-- Optional: add more plugins if needed -->
 </body>
 </html>
